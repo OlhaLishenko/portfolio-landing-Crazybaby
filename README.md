@@ -4,7 +4,6 @@
 
 <div align="center">
 <img src="./src/images/header/logo.png" width="150" alt="Logo" />
-</a>
 
 <h2> ------- Crazybaby Landing Page -------- </h2>
 </div>
