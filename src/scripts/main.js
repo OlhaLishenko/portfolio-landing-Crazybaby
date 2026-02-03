@@ -1,6 +1,9 @@
 "use strict";
 
-const page = document.documentElement;
+window.addEventListener("load", () => {
+  document.documentElement.classList.add("loaded");
+});
+
 const arrow = document.querySelector(".footer__arrow-btn");
 const startArrow = document.querySelector(".main");
 const endArrow = document.querySelector(".header");
@@ -18,8 +21,8 @@ const quotePhotoMove = document.querySelector(".quote__photo-wrap");
 const quoteTarget = document.querySelector(".quote");
 
 quoteTarget.addEventListener("mouseover", () => {
-  quoteTextMove.classList.add("quote__text--quote--move") ||
-    quotePhotoMove.classList.add("quote__photo-wrap--move");
+  quoteTextMove.classList.add("quote__text--quote--move");
+  quotePhotoMove.classList.add("quote__photo-wrap--move");
 });
 
 const emailInput = document.querySelector(".contacts__input--email");
@@ -38,7 +41,6 @@ formBotton.addEventListener("click", (event) => {
 const buttonRight = document.querySelector(".slider__btn--right");
 const buttonLeft = document.querySelector(".slider__btn--left");
 const content = document.querySelectorAll(".features__content-box");
-const container = document.querySelector(".features__content");
 const currentPage = document.querySelector(".slider__pages--current");
 
 let currentIndex = 0;
